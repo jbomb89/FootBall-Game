@@ -46,7 +46,6 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
-*.vsconfig
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -71,3 +70,20 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+*.vsconfig
+FootBall/Library/Artifacts/
+FootBall/Library/PackageCache/
+FootBall/Library/ShaderCache/
+FootBall/Library/StateCache/
+FootBall/Logs/
+FootBall/obj/
+FootBall/Temp/
+FootBall/UserSettings/EditorUserSettings.asset
+FootBall/Library/ArtifactDB
+FootBall/Library/ArtifactDB-lock
+FootBall/Library/Bee/
+FootBall/Library/PlayerDataCache/
+FootBall/Library/BuildPlayerData/
+FootBall/Library/
+FootBall/UserSettings/Layouts/CurrentMaximizeLayout.dwlt
