@@ -75,6 +75,7 @@ crashlytics-build.properties
 
 *.vsconfig
 FootBall/Library/Artifacts/
+FootBall/Library/ArtifactDB/
 FootBall/Library/PackageCache/
 FootBall/Library/ShaderCache/
 FootBall/Library/StateCache/
