@@ -24,19 +24,17 @@ public class Ballpickup : MonoBehaviour
     {
         footBall.Disable();
     }
-    public void FixedUpdate()
+    public void Update()
     {
 
-        
 
 
+       
 
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, 100.0f))
 
         {
-
-            // curremtly Debug stuff to make the raycast seen
            
             footBall.Player.PickUp.performed += Pickup;
         }
@@ -51,14 +49,20 @@ public class Ballpickup : MonoBehaviour
         {
             // The input stuff to pickup the ball **IS SUBJECT TO CHANGE**
             print("HIT");
-
+            Ball = hit.rigidbody;
+            Ball.AddForce(1, 100, 1);
             if (hit.rigidbody != null && !hit.collider.gameObject.GetComponent<FixedJoint>())
             {
-                Ball = hit.rigidbody;
+
+              
                 joint = Ball.gameObject.AddComponent<FixedJoint>();
+                Ball.isKinematic = true;
+                Ball.position = player.position;
                 joint.connectedBody = player;
                 held = true;
                 Ball.gameObject.layer = 6;
+                Ball.isKinematic = false;
+                
             }
         }
     }

@@ -8,6 +8,10 @@ public class TouchdownScoring : MonoBehaviour
     public TextMeshProUGUI Text;
    public float score; 
     private string _str;
+    private GameObject BALL;
+    public GameObject spawnpoint;
+    public GameObject ballR;
+    private bool gone;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +19,9 @@ public class TouchdownScoring : MonoBehaviour
         {
             score++;
             Particle.Play(true);
+            BALL = other.gameObject;
+            Destroy(BALL);
+            gone = true;
         }
 
     }
@@ -22,6 +29,10 @@ public class TouchdownScoring : MonoBehaviour
     {
         _str = score.ToString();
         Text.text = _str;
-
+        if (gone)
+        {
+            Instantiate(ballR, spawnpoint.transform);
+            gone = false;
+        }
     }
 }
