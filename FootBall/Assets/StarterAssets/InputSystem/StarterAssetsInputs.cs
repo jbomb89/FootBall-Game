@@ -12,6 +12,7 @@ namespace StarterAssets
         public Vector2 look;
         public bool sprint;
 
+
         [Header("Movement Settings")]
         public bool analogMovement;
 
@@ -34,6 +35,8 @@ namespace StarterAssets
                 LookInput(value.Get<Vector2>());
             }
         }
+
+
 
 
 

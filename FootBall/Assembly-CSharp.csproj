@@ -63,6 +63,11 @@
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\FootBall.cs" />
+    <Compile Include="Assets\Scripts\Ballpickup.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>
@@ -714,11 +719,17 @@
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
@@ -837,8 +848,15 @@
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Recorder.Samples.Editor.csproj">
+      <Project>{E8799BAF-7CB7-17E8-6D60-FB92347C91C9}</Project>
+      <Name>Unity.Recorder.Samples.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
